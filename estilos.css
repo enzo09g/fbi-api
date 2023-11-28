@@ -9,7 +9,7 @@ body {
   background-color: #F4F4F7;
 }
 
-.card {
+.tarjeta {
   width: 450px;
   height: 480px;
   cursor: pointer;
@@ -19,17 +19,17 @@ body {
   overflow: hidden;
   transition: 0.7s;
 }
-.card__image {
+.tarjeta__image {
   background-color: #000;
   position: relative;
   border-radius: 16px 16px 0 0;
 }
-.card__image img {
+.tarjeta__image img {
   width: 450px;
   height: auto;
   transition: 0.7s;
 }
-.card__image .date {
+.tarjeta__image .date {
   font-size: 15px;
   font-weight: bold;
   color: white;
@@ -44,7 +44,7 @@ body {
   right: 10px;
   text-align: center;
 }
-.card__content__category {
+.tarjeta__content__category {
   font-size: 15px;
   font-weight: bold;
   color: white;
@@ -58,7 +58,7 @@ body {
   top: 270px;
   transition: 0.7s;
 }
-.card__content__box {
+.tarjeta__content__box {
   width: 450px;
   height: 120px;
   overflow: auto;
@@ -70,38 +70,38 @@ body {
   padding: 28px;
   transition: 0.7s;
 }
-.card__content__box h1 {
+.tarjeta__content__box h1 {
   margin: 0;
   font-weight: 900;
 }
-.card__content__box h2 {
+.tarjeta__content__box h2 {
   color: #EF633D;
   font-weight: 600;
   font-size: 20px;
   margin-top: 4px;
   margin-bottom: 0px;
 }
-.card__content__box p {
+.tarjeta__content__box p {
   color: grey;
   font-size: 16px;
   text-align: justify;
 }
-.card__content__box .hide-text {
+.tarjeta__content__box .hide-text {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-/* .card:hover {
+/* .tarjeta:hover {
   transition: 0.7s;
   height: 150px;
 } */
-.card:hover img {
+.tarjeta:hover img {
   transform: scale(1.2);
   opacity: 0.7;
 }
-.card:hover .card__content__box {
+.tarjeta:hover .tarjeta__content__box {
   transform: translateY(-150px);
   -moz-animation: slide 0.8s ease 0.2s forwards;
   -webkit-animation: slide 0.8s ease 0.2s forwards;
@@ -109,15 +109,15 @@ body {
   -ms-animation: slide 0.8s ease 0.2s forwards;
   animation: slide 0.8s ease 0.2s forwards;
 }
-.card:hover .card__content__category {
+.tarjeta:hover .tarjeta__content__category {
   transform: translateY(-150px);
 }
-.card:not(:hover) .hidden {
+.tarjeta:not(:hover) .hidden {
   height: 120px;
   opacity: 0;
   animation: fade-out 0.5s;
 }
-.card:hover .hidden {
+.tarjeta:hover .hidden {
   opacity: 1;
   color: grey;
   animation: fade-in 1.5s;

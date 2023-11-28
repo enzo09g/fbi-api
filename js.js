@@ -23,7 +23,7 @@ function mostrarBuscado(masBuscados, indice) {
     let imagen = document.getElementById('imagen');
     imagen.src = masBuscados[indice].images[0].large
     console.log(masBuscados[indice].images)
-    let textoDescripcion = document.querySelector('.card__content__box');
+    let textoDescripcion = document.querySelector('.tarjeta__content__box');
     let nombre = document.getElementById('nombre');
     let apodo = document.getElementById('apodo');
     let descripcion = document.getElementById('descripcion');
@@ -40,7 +40,7 @@ function mostrarBuscado(masBuscados, indice) {
 document.addEventListener('DOMContentLoaded', async () => {
     const masBuscados = await mostWanted();
     const limite = masBuscados.length
-    const tarjeta = document.getElementById('card');
+    const tarjeta = document.getElementById('tarjeta');
     mostrarBuscado(masBuscados, obtenerNumeroAlAzar(limite))
     console.log(limite)
     console.log(masBuscados.url)
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         mostrarBuscado(masBuscados, obtenerNumeroAlAzar(limite))
     })
     tarjeta.addEventListener('mouseleave', () => {
-        let textoDescripcion = document.querySelector('.card__content__box');
+        let textoDescripcion = document.querySelector('.tarjeta__content__box');
         if (textoDescripcion) {
             textoDescripcion.scrollTop = 0;
         }
