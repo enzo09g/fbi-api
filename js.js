@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const limite = masBuscados.length
     const tarjeta = document.getElementById('tarjeta');
     mostrarBuscado(masBuscados, obtenerNumeroAlAzar(limite))
-    console.log(limite)
-    console.log(masBuscados.url)
     console.log("https://www.fbi.gov/wanted/human-trafficking/weili-pang/@@images/image/preview")
 
     let boton = document.getElementById('boton');
